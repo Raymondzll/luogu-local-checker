@@ -1,4 +1,4 @@
-﻿# 前置条件：python pyperclip selenium
+# 前置条件：python pyperclip selenium
 
 第一次运行时请先运行cookie.py，并在config.txt中填入自己的uid和存放洛谷源码的本地路径。
 
