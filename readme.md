@@ -1,11 +1,11 @@
-# ǰ��������python pyperclip selenium
+﻿# 前置条件：python pyperclip selenium
 
-��һ������ʱ��������cookie.py������config.txt�������Լ���uid�ʹ�����Դ��ı���·����
+第一次运行时请先运行cookie.py，并在config.txt中填入自己的uid和存放洛谷源码的本地路径。
 
-do_not_download�����ò�Ҫ���ص���Ŀ��
+do_not_download可设置不要下载的题目。
 
-����main.py���ɣ�������һ��chrome��򣬲�Ҫ�Լ��㣬�����еȴ�ʱ���������ģ����ĵ���������ͺ��ˡ�
+运行main.py即可，会跳出一个chrome框框，不要自己点，另外有等待时间是正常的，安心等他下载完就好了。
 
-�ڼ䲻Ҫ���ü����塣
+期间不要动用剪贴板。
 
-��־��data\logger.txt�鿴��
+日志在data\logger.txt查看。

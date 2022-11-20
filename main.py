@@ -5,14 +5,14 @@ import pyperclip
 
 url='https://www.luogu.com.cn'
 
-with open('config.txt','r') as f:
+with open('config.txt','r',encoding='utf-8') as f:
     uid=f.readline().rstrip()
     path=f.readline().rstrip()
     
 driver=webdriver.Chrome()
 driver.get(url)
 driver.delete_all_cookies()
-with open('.\\data\\cookies.json','r') as f:
+with open('.\\data\\cookies.json','r',encoding='utf-8') as f:
     cookie_list = json.loads(f.read())
 for cookie in cookie_list:
     driver.add_cookie(cookie)
@@ -35,7 +35,7 @@ def download(problem):
 pblm=set()
 do_not_download=set()
 txt=''
-with open('do_not_download.txt','r') as f:
+with open('do_not_download.txt','r',encoding='utf-8') as f:
     res=f.readlines()
     for line in res:
         line=line.rstrip()
@@ -60,5 +60,5 @@ txt+='未上传：\n'
 for problem_id in pblm:
     txt+=problem_id+'\n'
 driver.quit()
-with open('.\\data\\logger.txt','w') as f:
+with open('.\\data\\logger.txt','w',encoding='utf-8') as f:
     f.write(txt)

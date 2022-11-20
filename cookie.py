@@ -5,6 +5,6 @@ driver = webdriver.Chrome()
 driver.get('http://www.luogu.com.cn/auth/login')
 time.sleep(20)
 cookies = driver.get_cookies()
-with open('.\\data\\cookies.json', 'w') as f:
+with open('.\\data\\cookies.json','w',encoding='utf-8') as f:
     f.write(json.dumps(cookies))
 driver.quit()
